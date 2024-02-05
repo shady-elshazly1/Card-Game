@@ -1,0 +1,28 @@
+// My laptop is Lenovo legion Y740 (so you could match the dimensions)
+
+---To start the game--- (the main method is the control class)
+1) After running the program click start 
+2) A new window will open then you have to choose the 2 hero's just by clicking on them
+3) Then the game window will open(if the buttons are not responding or flipped or something looks wrong you just need to close the program and re-run it again till it  works because there is a problem in eclipse  )
+---How to play?---
+1)	The current will be at the bottom half and he will remain there till the end of the game.
+2)	You will see a panel contains the cards in the hand and a panel contains the number of cards in the hand and another one contains the number of the  remaining cards in the deck
+3)	You have a button contains the name of the hero and next to it you will find the HP and Manacrystals
+4)	There is a panels contains 4 buttons (end turn ,attack ,usespell ,and power).
+5)	There is a button in the center of the window indicates who’s turn. 
+6)	To play a minion form your hand to the field you just need to click on it.
+7)	To cast a spell you need to click on the spell in your hand to choose it then you click usespell  (if the spell is a minion target spell you need choose the target before clicking on usespell if you didn’t choose the spell or the target a message will be shown telling you need choose a target or the spell ).
+8)	To attack with a minion you have to choose the attacker and the target just by clicking on them then press attack. if you want to attack the opponent hero then choose the attacker and click on the button containing the opponent hero name to choose it as a target then click attack.
+9)      To use hero power click on the button called “power ” but if you are playing with Mage or priest you need to choose your target first and be careful because you can use your power on a minion in your field or in your opponent field or you could use it on your own hero or the opponent hero (Because the game description didn’t specify who I can use the power on so I made work for both  ).
+10)	To end your turn click end turn.
+11)	At the end when one hero wins you will have a window indicating who is the winner and you can start a new game from it also.
+
+---how does the code works?---
+// anything contains number 1 it means it is for hero1 and number 2 is for hero2 so both of them have the same components 
+I used to many arraylists to be able to categorize my buttons so you have hand1 these contains the buttons for hero 1’s hand ,field1 contains hero1 field buttons, attacker1 contains the chosen attacker from hero1 field target one contains the targeted minion from hero2 field . I used methods to update my strings like HP and manacrystals so that each hero has 2 methods that preform the same thing for example a method updates hero1 stings in case that hero1 is the current hero and another one in case that hero1 is the opponent hero and same for hero 2.
+There is a method to use hero power and cast spells for each hero are made to be called in the preform action method. I think the name of the methods is descriptive so it could help in understanding it’s functionality .
+There is method to update hero’s hand called updatehero11 for hero1 and updatehero2 for hero2. And another method to update the field for both heros called updatefield1  and updatefield2.   
+
+    
+  
+
